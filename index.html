@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://db.onlinewebfonts.com/c/7c5bca0d03fb744b5065e50bb951125b?family=PragmataFlash12+W00+Regular" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+        <h1>ATM Simulation</h1>
+        <div id="atm-interface">
+            <label for="balance">Balance Available: </label><br>
+            <input type="text" id="balance" readonly value="0">
+            <div id="action">
+                <h4>Actions: </h4>
+                <button onclick="checkBalance()">Check Balance</button><br><br>
+                <button onclick="deposit()">Deposit</button><br><br>
+                <button onclick="withdraw()">Withdraw</button><br><br>
+                <button onclick="exitATM()">Exit</button>
+            </div>
+        </div>
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
